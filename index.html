@@ -6,16 +6,33 @@
    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         $(function(){
-            var 
-        });
+             $("button").click(function(){
+                // $('p').html(name + " is " + age + " and your favorite place is " + favPlace);
+            
+            var name=$("#userName").val();
+            var color=$("#userColor").val();
+
+            var age=$("#userAge").val();
+            var favPlace=$("#userFavPlace").val();
+            $('p').html(name + " is " + age + " and his/her favorite place is " + favPlace);
+            $('p').css('color',color);
+            // $("button").click(function(){
+            //     $('p').html(name + " is " + age + " and your favorite place is " + favPlace);
+            // });
+             });
+            });
     </script>
   </head>
   <body>
       Name:<input type="text" id="userName"><br>
       Color:<input type="text" id="userColor"><br>
+      Age:<input type="text" id="userAge"><br>
+      Favorite Place<input type="text" id="userFavPlace"><br>
+      
       
       
       <button>Generate</button>
+      <p id ="sentence"></p>
       <div></div>
       <!--<input type="radio" name="color1" value="red">Red <br>-->
       <!--      <input type="radio" name="color1" value="red">Blue<br>-->
